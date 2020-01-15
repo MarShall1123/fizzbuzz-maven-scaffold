@@ -5,16 +5,19 @@ public class FizzBuzz {
     }
 
     String print(){
-        if (can_divide(15))
+        if (canDivide(15)){
             return "FizzBuzz";
-        if (can_divide(3))
+        }
+        if (canDivide(3)){
             return "Fizz";
-        if (can_divide(5))
+        }
+        if (canDivide(5)){
             return "Buzz";
-        return num+"";
+        }
+        return num + "";
     }
 
-    public boolean can_divide(int n){
-        return num%n==0;
+    public boolean canDivide(int n){
+        return num % n == 0;
     }
 }
