@@ -3,21 +3,24 @@ public class FizzBuzz {
     public FizzBuzz(int num) {
         this.num = num;
     }
-
-    String print(){
-        if (canDivide(15)){
-            return "FizzBuzz";
+    String result = "";
+    public String print() {
+        if (canDivide(15)) {
+            result += "FizzBuzz";
         }
-        if (canDivide(3)){
-            return "Fizz";
+        else if (canDivide(3)) {
+            result += "Fizz";
         }
-        if (canDivide(5)){
-            return "Buzz";
+        else if (canDivide(5)) {
+            result += "Buzz";
         }
-        return num + "";
+        else {
+            result += num;
+        }
+        return result;
     }
 
-    public boolean canDivide(int n){
+    public boolean canDivide(int n) {
         return num % n == 0;
     }
 }
