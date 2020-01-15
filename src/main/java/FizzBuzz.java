@@ -1,20 +1,20 @@
 public class FizzBuzz {
     int num;
+
     public FizzBuzz(int num) {
         this.num = num;
     }
+
     String result = "";
+
     public String print() {
         if (canDivide(15)) {
             result += "FizzBuzz";
-        }
-        else if (canDivide(3)) {
+        } else if (canDivide(3)) {
             result += "Fizz";
-        }
-        else if (canDivide(5)) {
+        } else if (canDivide(5)) {
             result += "Buzz";
-        }
-        else {
+        } else {
             result += num;
         }
         return result;
